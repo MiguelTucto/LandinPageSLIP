@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño y Patrones de Software</title>
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="img/logo123.png"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="icon icon-cross" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">COURSE</a></li>
+        <li><a href="">BLOG</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+    <i class="icon icon-menu" onclick="showMenu()"></i>
+  </nav>
+  <h1>Acerca de nosotros...</h1>
+</section>
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>Miguel Tucto</h1>
+      <p>Mi nombre es Miguel Angel Tucto Rivera. Soy muy persistente con respecto a algo que me gusta. No paro hasta obtener el resultado que deseo. Me gusta la música, programar y poder ayudar a otros. Entiendo bien la programación y cómo debería ser para satisfacer las necesidades de las personas.</p>
+      <a href="">Contáctanos</a>
+    </div>
+    <div class="about-col">
+      <img src="img/miguel.jpg">
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <h4>Nosotros</h4>
+  <p>Para servir a los estudiantes que mas necesitan de nuestro apoyo</p>
+  <div class="icons">
+    <i class="icon icon-facebook"></i>
+    <i class="icon icon-github"></i>
+    <i class="icon icon-linkedin"></i>
+    <i class="icon icon-twitter"></i>
+    <i class="icon icon-whatsapp"></i>
+    <i class="icon icon-youtube"></i>
+  </div>
+  <p>Hecho con <i class="icon-star"></i> para todos </p>
+</section>
+<script>
+  var navLinks=document.getElementById("navLinks");
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+  function showMenu(){
+    navLinks.style.right="0px";
+  }
+</script>
+</body>
+</html>

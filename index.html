@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Patrones de Software</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo123.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="icon icon-cross" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="icon icon-menu" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Siempre al alcance de todos</h1>
+        <p>Te ayudamos en todo lo que necesites. Slip viene contribuyendo a los estudiantes
+        por más de 5 años. Nuestras recomendaciones y los 20 nos garantizan.<br> Slip para todos. </p>
+        <a href="" class="btn">Visítanos para conocer más</a>
+    </div>
+    </section>
+    <section class="course">
+        <h1>Lo que ofrecemos</h1>
+        <p>Mira nnuestros diferentes servicios que oferecemos</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Personal</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="course-col">
+                <h3>Compañero</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="course-col">
+                <h3>Gratuito</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Nuestros cursos populares</h1>
+        <p>Tenemos una infinidad de cursos que les encanta a todos.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/matematica.jpg">
+                <div class="layer"><h3>Matematica</h3></div>
+            </div>
+            <div class="campus-col">
+                <img src="img/fisica.jpg">
+                <div class="layer"><h3>Fisica</h3></div>
+            </div>
+            <div class="campus-col">
+                <img src="img/quimica.jpg">
+                <div class="layer"><h3>Quimica</h3></div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h1>Lo que opinan sobre nosotros</h1>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="img/retrato1.jpg">
+                <div>
+                    <p>Buena página web. Encuentro lo que necesito en cualquier momento.
+                        Tambien hay de todos los cursos.</p>
+                    <h3>Adam Beyer</h3>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star_outline"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="img/retrato2.jpg">
+                <div>
+                    <p>Buena página web. Encuentro lo que necesito en cualquier momento.
+                        Tambien hay de todos los cursos.</p>
+                    <h3>Jumi Lee</h3>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star_half"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h1>Qué esperas para poder utilizar nuestras diversas herramientas, o ayudarte
+            de nuestros trabajos</h1>
+        <a href="index.html"><img src="img/playstore.png" class="cog"></a>
+    </section>
+    <section class="footer">
+        <h4>Nosotros</h4>
+        <p>Para servir a los estudiantes que mas necesitan de nuestro apoyo</p>
+        <div class="icons">
+            <i class="icon icon-facebook"></i>
+            <i class="icon icon-github"></i>
+            <i class="icon icon-linkedin"></i>
+            <i class="icon icon-twitter"></i>
+            <i class="icon icon-whatsapp"></i>
+            <i class="icon icon-youtube"></i>
+        </div>
+        <p>Hecho con <i class="icon-star"></i> para todos </p>
+    </section>
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+    </script>
+</body>
+</html>
